@@ -12,12 +12,39 @@
 hosting 등을 막을 수 있는 정의
 ```
 1helloworld.js
+
 ---
 ## 2. 데이터 타입, data type, let vs var,hoistting
+* 변수란(Variable)
+```
+let
+
+```
+* Block Spoce
+```
+{
+
+}
+```
+ var 쓰지마....
+```
+hosting 변수의 선언을 맨 위로 올림
+선언 되지 않은 위에서 사용해도 undefiend로 나옴
+block scope 안지켜짐
+```
+* 템플릿 리터럴
+    * 백틱`` 기호 안에 ${}으로 넣으면 문자열로 출력 가능
 
 
 
 ---
+* const (상수)
+Number,String,Boolean,Symbol, 다이나믹 타입핑,object
+
+2datatype.js
+
+---
+
 ## 3. 코딩의 기본 operator if, for loop 코드 리뷰 팁
 
 ---
