@@ -46,6 +46,22 @@ Number,String,Boolean,Symbol, 다이나믹 타입핑,object
 ---
 
 ## 3. 코딩의 기본 operator if, for loop 코드 리뷰 팁
+1. String concatenation
+2. 기본연산자
+3. 전위, 후위 연산자
+4. 할당 연산자
+5. 비교 연산자
+6. 논리 연산자
+7. 등호 연산자
+8. if, else if, else
+9. 삼항 연산자
+10. switch
+11. while
+12. do while
+13. for
+14. for 중첩 continue, break
+
+3if_for_loop.js
 
 ---
 ## 4. Arrow function 은 무엇인가? 함수의 선언과 표현
