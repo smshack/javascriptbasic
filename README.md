@@ -66,7 +66,31 @@ Number,String,Boolean,Symbol, 다이나믹 타입핑,object
 ---
 ## 4. Arrow function 은 무엇인가? 함수의 선언과 표현
 
+1. 함수의 선언
+```
+ function name(param1,param2){
+     수행되야 할 작업 
+     return '작업 결과물';
+ }
+```
+2. 파라미터
+3. 디폴트 파리미터
+4. Rest parameters(...args)
+파라미터가 여러개 들어갈 경우 배열 형태로 받을수 있음
+5. 지역변수, 전역 변수
+6. 함수란 값을 리턴해 준다
+7. 조건이 맞지 않을 경우 빨리 리턴해줘야 함!!
+8. 함수의 선언과 할당
+9. 콜백을 여러번 하지 말고 분리하자
+10. Arrow function 짧게 간단하게 줄여서 쓸수 있음
+```
+const simplePrint = function() {
+    console.log('simplePrint!')
+}
 
+const simplePrint = () => console.log('simplePrint!')
+
+```
 ---
 ## 5. 클래스와 오브젝트의 차이점(class vs object), 객체 지향 언어 클래스 정리
 
