@@ -112,6 +112,9 @@ const simplePrint = () => console.log('simplePrint!')
 * public private
 * static
 * 상속과 다형성
+
+[자료형 정리 url](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference)
+
 ---
 ## 6. 오브젝트란 뭘까??
 
