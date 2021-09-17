@@ -91,10 +91,27 @@ const simplePrint = function() {
 const simplePrint = () => console.log('simplePrint!')
 
 ```
+4function.js
+
 ---
 ## 5. 클래스와 오브젝트의 차이점(class vs object), 객체 지향 언어 클래스 정리
+* 클래스란 
+    - 템플릿
+    - 선언만 해놓음
+    - 클래스 자체는 데이터가 아니고 틀만 정의 해 놓음
 
+* 오브젝트
+    - 클래스를 이용해서 데이터가 넣어지면 오브젝트가 됨
+    - instance of a class
 
+* 클래스 개념
+    - 클래스(자판기)
+    - 동전을 넣다(동작)
+    - 사용자가 동전이 -1 금액 란 개념이 맞지 않음
+
+* public private
+* static
+* 상속과 다형성
 ---
 ## 6. 오브젝트란 뭘까??
 
