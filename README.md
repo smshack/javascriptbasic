@@ -117,11 +117,33 @@ const simplePrint = () => console.log('simplePrint!')
 
 ---
 ## 6. 오브젝트란 뭘까??
-
+* 오브젝트는 키와 값으로 구성
+    - object = {key:value}
+    - obj.key =>value
+    - obj[`${key}`] => value 
+    - in 해당 키 값이 있는지 확인 ('name' in person1)
+    - for ... in | for ... of
 ---
 ## 7. 배열 제대로 알고 쓰자
-
-
+* 자료구조
+    - 동일한 구조의 타입의 데이터를 묶는 경우
+    - 검색, 삽입, 정렬, 삭제
+- 배열
+    - 인덱스로 같은 타입의 데이터를 묶어서 사용
+    - 0부터 시작
+    - 인덱스로 접근
+- for
+- forEach
+- map
+- push
+- pop
+- shift
+- unshift
+- splice
+- concat
+- indexOf
+- include
+- lastindexOf
 ---
 ## 8. 유용한 10가지 배열 함수들 Array APIs 총 정리
 
