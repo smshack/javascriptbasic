@@ -179,6 +179,26 @@ const simplePrint = () => console.log('simplePrint!')
     - 비동기적으로 콜백할수를 호출하는 함수에게 비동기적으로 호출되기를 원하는 코드를 콜백함수에 담아서 전달해야 한다
 ---
 ## 11. 프로미스 개념부터 활용까지 Promise
+- Promise
+    - 비동기를 간편하게 처리할 수 있게 하는 객체
+    - 정해진 기능을 수행후 정상처리 후 리턴값 전달
+    - 정상 처리 안될 경우 에러
+ 1. Producer(생산자)
+-  새로운 프로미스가 만들어질 때는 
+-  우리가 만든 excutor가 바로 실행 된다
+-  선언하면 바로 시작 되기 때문에 원하는 시점에 시작되야 한다면
+-  위 사항을 고려해서 해야함
+- resolve 성공적일 때 리턴 값
+- reject 에러시 리턴
+2. Consumer(소비자)
+- then
+- catch
+- finally
 
+3. Promise chaining
+then에서 받고 받고 받는 식으로 이어서 then으로 체이닝 할 수 있음
+
+4. 에러 핸들링
+reject => catch
 ---
 ## 12. 비동기의 꽃 javascript async와 await 그리고 유용한 Promise APIs
