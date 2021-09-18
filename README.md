@@ -169,7 +169,9 @@ const simplePrint = () => console.log('simplePrint!')
 - [JSON Validator](https://tools.learningcontainer.com/j...)
 ---
 ## 10. 비동기 처리의 시작 콜백 이해하기, 콜백 지옥 체험
-
+- 자바 스킄립트는 기본적으로 동기적으로 실행됨
+-  동기적 (순차적)
+- 비동기적(비순차적)
 ---
 ## 11. 프로미스 개념부터 활용까지 Promise
 
