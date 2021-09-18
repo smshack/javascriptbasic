@@ -202,3 +202,12 @@ then에서 받고 받고 받는 식으로 이어서 then으로 체이닝 할 수
 reject => catch
 ---
 ## 12. 비동기의 꽃 javascript async와 await 그리고 유용한 Promise APIs
+- async 함수 앞에 선언하면 Promise 객체로 만들어줌
+- await promise 객체 동기적으로 처리 가능하도록 함
+- 동기적 비동기적으로 순차적으로 실행될 필요가 없을 경우에는 Promise 객체를 좀더 효과적으로 가져올수 있는 방법을 생각
+- Promiseall
+---
+## 13. 함수 기본 보충
+- 함수를 선언
+- 함수를 호출
+- 함수 자체를 전달하는 부분 확인
