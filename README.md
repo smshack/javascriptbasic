@@ -158,8 +158,15 @@ const simplePrint = () => console.log('simplePrint!')
 10. 정렬 sort
 ---
 ## 9. JSON 개념 정리와 활용 방법 및 유용한 사이트 공유
-
-
+* JSON(javascript Object Notation)
+    - 클라이언트 <->서버(JSON 형태로 통신)
+1. obj => json  stringify
+2. json => obj parse
+3. JSON 유용한 사이트
+- [JSON Diff checker](http://www.jsondiff.com/)
+- [JSON Beautifier/editor](https://jsonbeautifier.org/)
+- [JSON Parser](https://jsonparser.org/)
+- [JSON Validator](https://tools.learningcontainer.com/j...)
 ---
 ## 10. 비동기 처리의 시작 콜백 이해하기, 콜백 지옥 체험
 
