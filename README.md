@@ -216,3 +216,13 @@ reject => catch
 - 재사용성을 높이는 방법
 - callback 함수를 지정해서 공통적으로 사용하는 함수를 지정해서 사용
 - 에러 처리 함수값이 없다면 있다면 && 
+
+## 15. 유용한 최신 javascript  문법
+- ES6
+    01:53 Destructuring assignment
+    -  Spread syntax
+    -  Default parameters
+    -  Ternary Operator
+    -  Template Literals
+    -  Optional chaining (ES11)
+    - Nullish Coalescing Operator (ES11)
