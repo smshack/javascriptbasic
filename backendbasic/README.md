@@ -6,16 +6,51 @@
 - 강의를 듣고 나중에 더 알아보고 싶은 토픽을 적을 노트 준비
 ## 2. node.js 란
 - node.js란 무엇이며 무엇을 할수 있는가
+    - 자바스크립트 런타임 환경
+    - 브라우저 밖에서도 자바스크립트로 실행 가능하도록 하는 것
+    - 노드가 설치된 어떤 환경에서도 백엔드, 서버, 프론트엔드, 스크립트, 오토메틱도 사용 가능
 - node.js 특징과 내부 동작 방식에 대해 큰 그림 이해하기
-    - 싱글 쓰레드 사용
+    1. 자바스크립트로 모든 것을 처리할 수 있음
+    2.  노드를 쓰는 개발자들이 많다(커뮤니티 자료를 얻기 쉽다)
+    3.  큰 기업들이 node.js 를 사용하고 있다(유용성이 검증되어 있음)
+    4.  여러 사용 가능한 모듈이 많다
+    5.  다른 백엔드에 비해 쉽게 배울수 있어 높은 생산성을 얻을 수 있음
+    6.  강력한 커뮤니티(npm 라이브러리 사용 가능)
+- node.js 내부 들여다 보기
+    -  노드 js는 싱글 메인 쓰레드가 있음
+    -  이벤트가 발생할 때 처리해야하는 콜백형태로 전달해주면 node.js에서 병렬적으로 처리해줌
+    - 이벤트 루프에서 너무 무거운 작업을 처리하지 말아라
+    - 자바스크립트 런타임 / 싱글 쓰레드/ non -Blocking I/O /Event - Driven
 - node.js 서버의 특징과 장점과 단점 알아보기
+    - 하나의 메인 싱글 쓰레드가 있고 요청을 받고 해야하는 일을 처리할 수 있는 곳으로 바로 던지고 처리된걸 다시 요청된 곳으로 보내는 형태
+
 ## 3. 필요한 툴들
 - 기본 툴 설치
-- REPL 이란 무엇인지 알아보고 직접 실행히 보기
+    - node.js| vscode | postman | terminal
+    - REPL 이란 무엇인지 알아보고 직접 실행히 보기
+    - read eval print loop 터미널에서 간편하게 사용 가능
 - 파일로 노드 코드를 동작시켜 보기
 ## 4. node 모듈
 - 중요한 사이트 북마크 해놓기
+> 노드 입문자를 위한 심플한 사이트: https://nodejs.dev/learn
+
+> 노드 공식 사이트: https://nodejs.org/en/docs/
+윈도우나 VSCode 최신 버전에서 Node 타입 정의 파일이 업데이트 되었어요 :)
+
+저와 다르게 아래와 같이 global 정의가 나와도 놀라지 마세요.
+
+> https://github.com/DefinitelyTyped/DefinitelyTyped/blob/9d59b7aadafb5ee2afac9c4440b82e692a7449c1/types/node/globals.global.d.ts
+
+
+> 타입 정의 확인 https://github.com/DefinitelyTyped/DefinitelyTyped/blob/9d59b7aadafb5ee2afac9c4440b82e692a7449c1/types/node/globals.d.ts#L97
+
 - 어떻게 효율적으로 모듈들을 알아보고 공부해 볼수 있는지 팁 확인
+    1. 콘솔 잘 쓰기
+        - log level
+        - assert(if문 역할)
+        - print object(table, dir)
+        - 시간 측정 time timeEnd
+        - trace (함수가 어디서 호출 됬는지 확인)
 - 스스로 모듈들을 살펴보고 필요한 내용들을 습득할 수 있기
 - 실습 노트 만들어 두고 계속 사용해보기
 ## 5. npm 알아보기
