@@ -57,8 +57,38 @@
 - 실습 노트 만들어 두고 계속 사용해보기
 ## 5. npm 알아보기
 - npm 이란 무엇이고 어떻게 활용되는지 확인해보기
+    - 라이브러리 관리자
+    1. npm init => packge.json 파일 생성
+    2. npm install libraryname => node_modules 생성
+> npm 공식 사이트 https://www.npmjs.com/
+
 - 프로젝트에 필요한 외부 라이브러리를 다운로드 받고 관리할 수 있기
+    - package.json 작성 관리
+    - 라이센스 관리
 - 프로젝트 버전명 관리하는 방법에 대해 알아보기
+    - 라이브러리 버전 정보
+    - 1 -0 -0 
+    - major(기존에서 대거 수정 및 변경 사항 있을 경우), Mimor(기능 추가), Patch(버그 수정)
+    - npm 버전 확인 사이트
+        - https://docs.npmjs.com/about-semantic-versioning
+        - https://semver.npmjs.com/
+    
+    - 글로벌로 설치하고 목록 확인
+        - npm i -g netlify
+        - 리스트 확인 npm ll
+        - 글로벌로 설치된 모듈 확인 npm ll -g 
+        - 글로벌 중에 의존성 제외 직접 설치한 것만 확인 npm ll -g --depth=0
+    - 설치된 모듈 지우기
+        - npm uninstall 모듈명
+    - 버전 업데이트 필요 목록 확인
+        - npm outdated
+    - 해당 모듈 정보 확인
+        - npm view 모듈명
+    - 개발 모드에서 유용한 라이브러리
+    - 설치시에 npm i nodemon --save-dev
+        - nodemon
+
+
 ## 6. 디버깅 해보기
 - 디버깅의 목적이 무엇인지 이해하기
 - 디버거의 사용법을 익히고 직접 실습해 보기
