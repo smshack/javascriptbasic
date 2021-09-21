@@ -220,7 +220,62 @@
     - github api 예시를 보자 :https://docs.github.com/en/rest
 ## 11. express !!
 - Express 전반적인 큰 그림 이해하기 
+    - express란 많은 사람들이 사용하고 검증된 서버 구성 프레임 워크
+```
+const express = require('express')
+const app = express()
+
+// 읽기
+app.get('/posts',function(req,res,next){
+
+})
+
+// 생성
+app.post('/posts',function(req,res,next){
+    
+})
+
+// 수정
+app.put('/posts:id',function(req,res,next){
+    
+})
+
+// 삭제
+app.delete('/posts:id',function(req,res,next){
+    
+})
+```   
+https://github.com/obenef-com?tab=repositories
+```
+http://34.84.226.175:8080/sky/jarry?keyword=bts
+{
+  "path": "/sky/jarry",
+  "header": {
+    "host": "34.84.226.175:8080",
+    "connection": "keep-alive",
+    "upgrade-insecure-requests": "1",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36",
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
+    "accept-encoding": "gzip, deflate",
+    "accept-language": "ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7"
+  },
+  "params": {
+    "id": "jarry"
+  },
+  "query": {
+    "keyword": "bts"
+  }
+}
+```
 - 미들웨어는 무엇인지 정확하기 이해하기
+    - express 란 미들웨어의 체인이라고 할 수 있음
+    - app.use, app.all post,get,...
+    - next() => 흐름이 이어지게 만들어야 함
+    - res.send
+- 에러처리 하는 방법
+    1. 문제가 생겼을 때 클라이언트한테 메시지를 전달하는 것
+    2. 에러가 발생시 서버 동작이 죽지 않도록 예외 처리를 해주는 것
+
 - 기본 사용방법, 에러처리 방법, 라우트에 대해 실습하기
 - 유용한 내부 그리고 커뮤니티에서 많이 사용되어지는 미들웨어 사용하기
 ## 12. Dwitter 프로젝트 시작
