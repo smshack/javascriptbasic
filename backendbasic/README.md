@@ -105,8 +105,86 @@
 - 리팩토링
 ## 8. web 기초 지식
 - HTTP의 역사와 HTTPS와의 차이점 이해하기
+    - Hypertext(media) Transfer Protocol
+    - request(요청|클라이언트) <-> response(응답|서버)
+    - Hypertext(media) Transfer Protocol Secure
+    - 클라이언트 서버 통신간에 암호화 추가
+
 - HTTP 세가지 다른 버전의 차이점 이해하기
+    - v1 => http| https 둘다 사용 가능
+        - text를 베이스로 함
+        - header 압축등을 진행하지 않아 데이터가 큼
+    - v2 => https 만 사용 가능
+        - 바이너리 형태 사이즈 작음
+        - 압축한 형태로 넘겨서 데이터 사이즈가 상대적으로 작음
+    - v3 => v2랑 비슷 아직 지원 안됨
 - Request method, response Code, 그리고 Headers는 무엇인지 이해하기
+    1. TCP 커넥션 생성
+    2. 클라이언트 요청(request) -> header, body, params, query
+    3. 서버 응답(response) -> 응답상태코드
+
+- status 코드란(서버에서 처리한 결과에 대한 응답 코드)
+    - 1xx(정보)
+        - 100 계속 요청해
+        - 102 처리 중이야
+    - 2xx(성공)
+        - 200 성공적이야
+        - 201 리소스가 성공적으로 만들어졌어
+        - 204 요청은 처리했지만 데이터가 없어
+
+    - 3xx(리다이렉션)
+        - 301 그 요청 url은 다른 url로 가야되
+        - 302 찾았는데 임시적으로 다른데로 가야되
+        - 303 get에 한해서 302랑 같음
+        - 307 임시 영구적으로 리다렉트 post 요청에 대해서만
+        - 308 임시 영구적으로 리다렉트
+    - 4xx(클라이언트 에러-> 잘못된 방식으로 요청이 들어옴)
+        - 400 클라이언트가 요청시에 쿼리가 잘못됬거나  api를 잘못된 방식으로 사용
+        - 401 로그인 등 특정한 키를 가진 클라이언트가 요청을 해야되는데 권한이 없는 사람이 요청함
+        - 403 로그인한 사용자긴 한데 그 행위를 할 수 있는 권한이 없을 때
+        - 404 찾을 수 없을 때
+        - 405 해당 url에 대해서 쓰거나 삭제하는 기능을 허용하지 않아
+        - 409 클라이언트가 만들고자 하는 리소스가 이미 존재하거나 충돌이 날때
+
+    - 5xx(서버 자체에서 예상치 못한 에러가 남)
+        - 500 중간 서버가 어떻게 처리가 가야 되는지 찾지 못할 때
+        - 502 프로토콜에 문제가 있어 통신이 제대로 되지 않을 때
+        - 503 웹 사이트의 서버가 사용할 수 없는 상태임
+  > mdn 상태코드:  https://developer.mozilla.org/ko/docs/Web/HTTP/Status
+- 서버에 요청할 때 사용 하는 url
+- url(uniform resource locator)
+- https://servername.com:port/index.html?key=value
+- protocol hostname (port) path query
+- request Method
+    - get
+        리소르를 가져올 때
+    - post
+        - 리소스를 생성할 때(201로 응답)
+    - put
+        - 리소스를 수정할 때
+    - delete
+        - 리소스를 삭제할 때
+    - patch
+        - 리소스를 부분적으로 수정할 때
+    - head
+        - get 메서드와 돌일하지만 가능한지 아닌지 확인
+    - options
+        -  목적 리소스의 통신을 설정
+    - trace
+        - 목적 리소스의 경로를 따라서 메시지 응답상태 확인
+> request 메소드 확인: https://developer.mozilla.org/ko/docs/Web/HTTP/Methods
+
+- http header??
+    - session(서버쪽 저장 공간) & cookies(브라우저 저장 공간)
+        - set-cookie: 해당 토큰 값을 통해서 인증 진행가능
+    - headers
+        - Authorization(인증 정보는 해당 오브젝트에 담아야 함)
+        - content-length bytes
+        - content-type text/html | application/json
+        - Content-Language en
+        - Cache-Control:max-age=< seconds >
+        - Cache-control: no-cache
+> headers: https://developer.mozilla.org/ko/docs/Web/HTTP/Headers
 - 필요할 때 어떻게 더 공부할 수 있는지 팁 북마크
 ## 9. node 서버 만들기
 - HTML 파일 보내보기
