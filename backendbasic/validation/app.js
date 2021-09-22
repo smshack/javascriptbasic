@@ -16,21 +16,25 @@ app.post(
   '/user',
   [
     body('name')
+      .trim()
       .notEmpty()
       .withMessage('이름을 입력해')
       .isLength({ min: 2 })
       .withMessage('이름은 두글자 이상'),
     body('age')
+      .trim()
       .notEmpty()
       .withMessage('나이를 입력해')
       .isInt()
       .withMessage('나이는 숫자'),
     body('email')
+      .trim()
       .notEmpty()
       .withMessage('이메일을 입력해')
       .isEmail()
       .withMessage('이메일 형식으로 입력해 주세요'),
     body('job.email')
+      .trim()
       .notEmpty()
       .withMessage('이메일을 입력해')
       .isEmail()
