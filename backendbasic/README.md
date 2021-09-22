@@ -286,6 +286,11 @@ http://34.84.226.175:8080/sky/jarry?keyword=bts
 - 코드 개선해보기
 - 솔루션 영상들을 보면서  어떻게 개선되었는지 확인
 - 앞으로 코드를 작성할 때 어떻게 적용할 건지 포인트 잡아놓기
+    - MVC
+        1. Model    데이터
+        2. Controller 로직
+        3. View 보여지는 화면
+        route => logic => data
 ## 14. Validation 유효성
 - validation, Sanitization 이란 무엇인지 , 중요성 확인하기
 - Validation 실습을 통해 필요한 내용 정리하기
