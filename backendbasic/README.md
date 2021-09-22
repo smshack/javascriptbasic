@@ -302,8 +302,40 @@ https://express-validator.github.io/docs/
 - Dwiiter에 어떻게 적용할 수 있을지 고민하고 적용하기
 ## 15. Authentication 로그인
 - 세션과 쿠키 vs JWT 방식의 차이점을 이해하기
+    - Authentication(인증, 로그인)
+        - 보통 password나 pin-code로 인증
+        - 서버에서는 인증을 어떻게 처리할까??
+            1. id/password 서버쪽에 저장
+    - 세션(서버의 저장소)
+        1. 클라이언트 에서 서버로 로그인 정보 넘겨서 요청
+        2. 서버에서 DB에서 정보 확인
+        3. 유효한 사용자라면 session을 만듦(유저 정보 및 유효기간 저장)
+        4. 클라이언트에게 쿠키로 세션 정보를 넘김
+    - 쿠키(클라이언트의 저장소)
+
+    - 단점
+        - 하나의 서버에 데이터를 가지고 있으므로 분산형 시스템에서는 필요없는 네트워크 요청이 발생할 수 있음
+
 - Bcrypt와 JWT 실습하면서 사용하는 법 익히기
+    - jwt(JSON Web Token)
+        - header| payload | signature 으로 구성
+            - header => 사용하는 알고리즘, type
+            - payload => 인코딩된 사용 데이터
+            - signature => 이것을 인코딩하기 위해 사용하는 비밀키(header, payload 데이터가 변경 되었는지 확인)
+        1. 사용자가 클라이언트에서 서버로(아이디,패스워드) 등 로그인 정보 전달
+        2. 서버에서 DB로 데이터 확인 => DB에서 확인된 데이터 정보 넘겨줌
+        3. 서버에서 jwt 토큰 생성
+        4. 사용자에게 보냄
+        5. 클라이언트는 그 이후 요청에는 request.header에 jwt 토큰을 포함
+        6. 서버에서 요청 처리시 headers authorization: Bearer JWT로 데이터를 보내서 유효성 검사를 실행
+    - 한번 jwt를 만들어서 넘기면 별도 서버에서 저장된것 없이 검증만 하면 됨
+    - jwt 단점은 계속 header에 jwt 토큰을 주고 받는다는 단점
 - 자바스크립트를 활용하여 프론트엔드 서비스층 구현하기
+    - bcrypt(password-hashing function)
+        - 패스워드 해싱 알고리즘 제공 => 단방향 가능 but 알고리즘 지정 가능
+        - 어떤 알고리즘사용 | 비용 | 길이(salt) 길수록 경우의 수가 늘어남 | Hash
+            -hashed:$2b$15$Aa2LlmcFEdmJEBn4dBMJWOUtjCGwNPZfesdxLeBHJdC45dkcNjrZm
+        - salt 가 길면 길수록 보안성이 길지만 처리하는 시간 기하급수적으로 길어짐
 ## 16. Dwitter 로그인 적용
 - 로그인 관련 APIs 설계하기
 - 사용자 인증 미들웨어 만들어보기
