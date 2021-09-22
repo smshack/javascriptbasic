@@ -293,6 +293,7 @@ http://34.84.226.175:8080/sky/jarry?keyword=bts
         route => logic => data
 ## 14. Validation 유효성
 - validation, Sanitization 이란 무엇인지 , 중요성 확인하기
+    - 유효성(validation) 검사 => 클라이언트가 서버로 요청할 때 보내는 데이터가 유효한지 확인하는 것
 - Validation 실습을 통해 필요한 내용 정리하기
 - Sanitization 실습을 통해 필요한 내용 정리하기
 - Dwiiter에 어떻게 적용할 수 있을지 고민하고 적용하기
