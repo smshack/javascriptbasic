@@ -336,6 +336,9 @@ https://express-validator.github.io/docs/
         - 어떤 알고리즘사용 | 비용 | 길이(salt) 길수록 경우의 수가 늘어남 | Hash
             -hashed:$2b$15$Aa2LlmcFEdmJEBn4dBMJWOUtjCGwNPZfesdxLeBHJdC45dkcNjrZm
         - salt 가 길면 길수록 보안성이 길지만 처리하는 시간 기하급수적으로 길어짐
+        - 보통 8 ~ 12 길이 정도로 사용하면 됨
+    - jwt 토큰 해석 사이트
+    https://jwt.io/
 ## 16. Dwitter 로그인 적용
 - 로그인 관련 APIs 설계하기
 - 사용자 인증 미들웨어 만들어보기
