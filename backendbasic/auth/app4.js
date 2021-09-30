@@ -5,15 +5,17 @@ const key = 'ZcadyUjxqitUqPxyvJzBqliQs9ctnTN6';
 // 16byte
 const iv = 'l2LY4bYTVIa69QvO';
 // const value = 'email:msakim@chosun.ac.kr&user_id:737853&name:김명수&HP:010-7131-6873&Organization:조선대학교&Major:치의학과'
+// const value =
+//   'email:test@test.com&user_id:737853&name:서명석&HP:010-7131-6873&indentity:교수자&Organization:조선대학교&Major:치의학과';
 const value =
-  'email:test@test.com&user_id:737853&name:서명석&HP:010-7131-6873&indentity:교수자&Organization:조선대학교&Major:치의학과';
+  'email:test22@test22.com&user_id:737853&name:test22&HP:010-7131-6873&indentity:교수자&Organization:조선대학교&Major:치의학과';
 // {
 // 	"_id" : ObjectId("611c5abd51b6e87fcc8cb54f"),
 // 	"confirmed" : true,
 // 	"blocked" : false,
 // 	"gender" : null,
 // 	"isLunarBirth" : null,
-// 	"isEmailAlarm" : "y",
+// 	"isEmailAlarm" : "y",s
 // 	"isSmsAlarm" : "n",
 // 	"identity" : "professor",
 // 	"username" : "msakim@chosun.ac.kr",

@@ -347,6 +347,10 @@ https://express-validator.github.io/docs/
 - 직접 스스로 도전하면서 가입, 로그인 서비스 완성하기(백엔드와 프론트 엔드)
 ## 17. configration
 - config의 중요성 확인하기(하지 않았을 때의 두가지 문제점 정리)
+    - .evn 파일에 설정
+    - yarn add dotenv
+    - gitignore 파일에 node_modules/ 와 .env 파일을 추가함
+    - 비밀번호나 중요 정보를 git에 제외하여 보안적으로 좋게 사용할 수 있음
 - 어떻게 config를 처리할 수 있는지 확인하기
 - 더 나아가 어떻게 코드를 개선할 수 있는지 , 활용성을 높일 수 있는지 팁 확인
 ## 18. socket 실시간 트윗
