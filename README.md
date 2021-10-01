@@ -41,3 +41,11 @@
 ### 22. MongoDB
 ### 23. Mongoose
 ### 24. Deployment - 배포
+---
+# 리덕스
+### 1. redux
+### 2. react-redux
+### 3. redux-toolkit
+### 4. MobX 
+### 5. mobx-react
+### 6. 리덕스 사가

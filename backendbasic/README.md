@@ -355,14 +355,68 @@ https://express-validator.github.io/docs/
 - 더 나아가 어떻게 코드를 개선할 수 있는지 , 활용성을 높일 수 있는지 팁 확인
 ## 18. socket 실시간 트윗
 - HTTP와 Socket의 차이점 이해하기
+    - 소켓이란?
+        기존에 http는 요청과 응답으로 동작
+        클라이언트에서 요청할 필요가 없이 클라이언트와 서버가 연결만 되있다면
+        서버가 원할 때 클라이언트에 전송할 수 있는 것
+        실시간으로 전송 시 사용
 - 소켓으로 백엔드, 프론트엔드 기본 동작 사항 실습하기
+    - server  yarn add socket.io
+    - client yarn add socket.io-client
 - 실습한 내용을 토대로 Dwitter 에 스스로 적용해 보고 솔루션 듣기
 ## 19. 데이터베이스 정리
 - 데이터베이스란 
+    -  여러 사람들이 공유하고 사용할 목적으로 통합 관리되는 데이터들의 모임
+    - data base managemnet system(DBMS)
+        - 데이터베이스 관리 시스템이란 다수의 사용자들이 데이터베이스 내의 데이터를 접근할 수 있도록 해주는 소프트웨어 들을 의미
+        - 파일로도 데이터 관리가 가능 하지만 데이터 중복, 데이터 중복 및 불일치 등의 문제가 발생 할 수 있음
+        - mysql , oracl, mongo ...
+
 - SQL 데이터베이스 특징
+    - SQL :구조적 질의 언어의 줄임말로 관계형 데이터베이스 시스템에서 자료를 관리 및 처리하기 위해 설계된 언어
+        - 테이블 행(row)과 열(columns)로 구성
+        - 한줄에 들어가 있는 것은 레코드
+        - 데이터형 정의 된것을 스키마라고 함
+        - 스키마가 정의되어 있다면
+        - primary key : 아이디
+        - foreign key: 두가지의 다른 테이블의 관계를 정의해줌
+    - sql 쿼리
+        - select : 어떤 행을 사용할 것인가?
+        - from : 어떤 테이블을 사용할 것인가?
+        - where : 조건을 정의
+        - ex) SELECT * FROM Users WHERE name LIKE '%Bob%';
+    
+    - 예시
+        - oracle, mysql, sqlLite, postgreSQL, SQL server
+
 - NoSQL 데이터베이스 특징
+    - NoSql : 관계가 없는 데이터 베이스
+        - 스키마가 엄격하지 않음
+        - 고립된 형태로 관리 가능
+        - 용도에 따라 key-value, document, wide-column, graph
+    - 몽고는 document로 관리
+        - 하나의 데이터
+        - 한 컬렉션(테이블이랑 비슷하게 생각)
+
 - ORM과 ODM은 무엇인지, 장/단점 이해하기
+    - ORM(object realation mapping) 이란 객체 관계 매핑
+        1. run the code
+        2. creates db table
+        3. creates the record
+        - 비즈니스 로직 처리에 좋음
+        - 추상화 하기 좋음
+        - 스키마 마이그레이션
+        - 상세한 쿼리를 할 수 없음
+    - ODM(object document mapping) 
+
 - 프로젝트별로 어떻게 적절한 데이터베이스를 찾으면 좋은지 팁 확인
+    - sql과 nosql
+    - sql사용시 서버 자체의 스펙을 높이는 방식으로만 확장 가능
+    - nosql 서로 관계가 없는 컬렉션을 따로 수평적으로 서버를 나눠서 저장 가능
+    - 어떤 데이터 타입을 저장하고 많이 사용하는지
+    - 각 사용자가 사용하는 데이터과 그 데이터량
+    - 각 데이터 간의 관계
+- 하이브리드로 필요에 따라 부분적으로 다른 데이터 베이스를 섞어서 사용
 ## 20. Mysql
 - MySQL 설치 및 테이블(스키마) 정의하기
 - Dwitter 적용 - tkdydwk wjdqh dlfrrh cnrkgkrl
