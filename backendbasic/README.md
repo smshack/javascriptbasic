@@ -419,7 +419,27 @@ https://express-validator.github.io/docs/
 - 하이브리드로 필요에 따라 부분적으로 다른 데이터 베이스를 섞어서 사용
 ## 20. Mysql
 - MySQL 설치 및 테이블(스키마) 정의하기
-- Dwitter 적용 - tkdydwk wjdqh dlfrrh cnrkgkrl
+    - https://www.mysql.com/
+    - https://victorydntmd.tistory.com/272
+    - 
+    - 데이터 베이스 확인
+        - show databases;
+        - use [데이터베이스명];
+        - 테이블 만들기
+        ```
+        CREATE TABLE `dwitter`.`users` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `username` VARCHAR(45) NOT NULL,
+  `password` VARCHAR(128) NOT NULL,
+  `name` VARCHAR(128) NOT NULL,
+  `eamil` VARCHAR(128) NOT NULL,
+  `url` TEXT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE INDEX `id_UNIQUE` (`id` ASC),
+  UNIQUE INDEX `username_UNIQUE` (`username` ASC));
+
+        ```
+- Dwitter 적용 - 
 - Dwiiter 적용 - 사용자의 트윗의 정보를 함께 join 해서 읽어오는 동작 외 CRUD 구현
 ## 21. Sequelize
 - Sequelize에 대해 알아보기
